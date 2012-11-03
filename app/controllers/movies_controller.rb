@@ -1,4 +1,8 @@
 class MoviesController < ApplicationController
+  
+  def search_tmdb
+    @movies = Movie.find_in_tmdb(params[:search_terms])
+  end
 
   def show
     id = params[:id] # retrieve movie ID from URI route

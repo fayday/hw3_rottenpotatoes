@@ -12,8 +12,10 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
+  gem 'rspec-rails'
 end
-group :test do
+
+group :test do  
   gem 'cucumber-rails'
   gem 'cucumber-rails-training-wheels'
 end
